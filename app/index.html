@@ -1,76 +1,108 @@
 <!doctype html>
-<html lang="ru-RU">
+<html lang="ru-RU" class="no-js">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <title>Title</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Title</title>
 
-  <!-- build:css css/vendor.min.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
 
-  <!-- build:css css/style.min.css -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- endbuild -->
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
 
-  <!-- build:js js/modernizr.min.js -->
-  <script src="bower/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
-</head>
+    <!-- <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"> -->
 
-<body>
-  <!--[if lt IE 9]>
-  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/" target="_blank">обновие</a> его</p>
-  <![endif]-->
+    <!-- build:js js/modernizr.min.js -->
+    <!-- <script src="bower/modernizr/modernizr.js"></script> -->
+    <!-- endbuild -->
 
-  <div class="wrapper">
-    <div class="maincontent">
+    <!-- [if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif] -->
+  </head>
 
-      <!-- header -->
-      <header class="page-header">
-        <div class="page-header__inner">
+  <body>
+
+    <svg style="height: 0; width: 0; position: absolute; visibility: hidden">
+      <!-- include simbol svg here -->
+      <!-- <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use> -->
+    </svg>
+
+    <!--[if lt IE 9]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/" target="_blank">обновие</a> его</p>
+    <![endif]-->
+
+    <div class="herosection"></div>
+
+    <div class="wrapper">
+
+      <!-- maincontent -->
+      <div class="maincontent">
+
+        <!-- header -->
+        <header class="page-header">
           header
-        </div>
-      </header>
-      <!-- END header -->
+        </header>
+        <!-- END header -->
 
-      <!-- content -->
-      <div class="content">
-        <div class="content__inner">
+        <!-- content -->
+        <div class="content">
           content
         </div>
+        <!-- END content -->
+
       </div>
-      <!-- END content -->
+      <!-- END maincontent -->
 
       <!-- footer -->
       <footer class="page-footer">
-        <div class="page-footer__inner">
-          footer
-        </div>
+        footer
       </footer>
       <!-- END footer -->
 
     </div>
-  </div>
-  <!-- build:js js/vendor.min.js -->
-  <!-- bower:js -->
-  <script src="bower/jquery/dist/jquery.js"></script>
-  <script src="bower/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
 
-  <!-- build:js js/script.min.js -->
-  <script src="js/script.js"></script>
-  <!-- endbuild -->
-</body>
+    <!-- Modal -->
+    <!--  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js -->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/script.min.js -->
+    <script src="js/script.js"></script>
+    <!-- endbuild -->
+  </body>
 
 </html>
