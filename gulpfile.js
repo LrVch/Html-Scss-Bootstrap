@@ -113,7 +113,7 @@ gulp.task("wiredep-bower", function () {
             // "./assets/javascripts/bootstrap/transition.js",
             // "./assets/javascripts/bootstrap/scrollspy.js",
             // "./assets/javascripts/bootstrap/modal.js",
-            "./assets/javascripts/bootstrap/tooltip.js"
+            // "./assets/javascripts/bootstrap/tooltip.js"
           ]  // подключение bootstrap js в html
         },
         "formstone": {
@@ -173,6 +173,11 @@ gulp.task('compass', function () {
       css: RS_CONF.path.cssDirDest,
       sass: RS_CONF.path.scssDirDest,
       image: RS_CONF.path.iconDir
+    }))
+    .on("error", notify.onError({
+        message: 'Error: <%= error.message %>',
+        title: "Compass",
+        sound: false // deactivate sound?
     }));
 });
 
