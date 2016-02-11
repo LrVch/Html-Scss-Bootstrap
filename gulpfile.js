@@ -332,7 +332,7 @@ gulp.task("size-app", function () {
 
 // Сборка и вывод размера папки DIST
 // ******************************************************
-gulp.task("dist", ["useref", "images", "fonts", "bootstrapFonts", "extras", "size-app"], function () {
+gulp.task("dist", ["useref", "images", "fonts", "bootstrapFonts", "extras", "php", "size-app"], function () {
   return gulp.src(RS_CONF.path.allDistFiles).pipe(size({
     title: "DIST size: "
   }));
